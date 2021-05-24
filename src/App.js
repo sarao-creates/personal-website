@@ -1,10 +1,18 @@
 import HomeComponent from './components/Home';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import ProjectComponent from './components/Projects';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-        <Route path='/' component={HomeComponent} />
+      <Switch>
+        <Route exact path='/'>
+          <HomeComponent/>
+        </Route>
+        <Route path='/projects'>
+          <ProjectComponent />
+        </Route>
+      </Switch>
     </Router>
   );
 }
