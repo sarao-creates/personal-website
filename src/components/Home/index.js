@@ -1,5 +1,6 @@
 import './index.css';
 import NavBar from '../NavBar';
+import ExpCard from '../ExpCard';
 
 function Home() {
     return (
@@ -10,7 +11,7 @@ function Home() {
                         <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Sameer Rao</h1>
                         <div class='px-10 py-5'>
                             <p class='font-mono font-medium text-2xl'>I'm a junior at <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a> studying Computer Science and Business Administration as a double major.
-                                I'm interested in product, consulting, statups, and the creator economy.
+                                I'm interested in product, consulting, statups, and the creator economy. Learn more about me <u>here</u>.
                                 <br /> <br />
                                 My dream job is to help companies–whether its building out products, scaling their customer base, or advising as a third-party.
                                 My website showcases projects and companies I've worked with in more detail. Feel free to explore :)
@@ -32,7 +33,27 @@ function Home() {
             
             </div>
 
-            <div class='w-screen h-screen'>
+            <div class='flex justify-center items-center w-screen h-screen'>
+                <div className='exp-section'>
+                    <div className='exp-title'>
+                        <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Experience</h1>
+                    </div>
+                    <div className='exp-div'>
+                        <div class='w-1/3 h-full'>
+                            <ExpCard bg='bg-sameer' company='Fidelity' position='Software Engineering Intern' dates='Jun 2021-Present' color='text-green-500' description='TBD'/>
+                            <ExpCard bg='bg-sameer' company='180 Degrees Consulting' position='Project Leader and Consultant' dates='Jan 2020-Present' color='text-green-600' description='TBD'/>
+                        </div>
+                        <div class='w-1/3'>
+                            <ExpCard bg='bg-sameer' company='Jemi' position='Growth Marketing Intern' dates='Sep 2020-May 2021' color='text-pink-500' description='Jemi is a creator monetization company that offers a website builder for creators to easily showcase content, engage with fans, and monetize online.'/>
+                            <ExpCard bg='bg-sameer' company='VRware' position='Virtual Reality Software Engineer' dates='Mar 2020-Dec 2020' color='text-yellow-500' description='TBD'/>
+                        </div>
+                        <div class='w-1/3'>
+                            <ExpCard bg='bg-sameer' company='CS+Social Good' position='Full Stack Engineer' dates='Jul 2020-Present' color='text-green-400' description='TBD'/>
+                            <ExpCard bg='bg-sameer' company='Cisco' position='Summer Extern' dates='Jun 2018-Jul 2018' color='text-blue-900' description='TBD'/>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
