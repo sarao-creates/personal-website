@@ -4,6 +4,7 @@ import ExpCard from '../ExpCard';
 import ProjCard from '../ProjCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSpotify, faInstagram, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
                         <div class='px-10 py-3'>
                             <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-5'><a target='_blank' rel='noopener noreferrer' href='https://twitter.com/SameerRaoVC'>Twitter</a></button> <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4'><a target='_blank' rel='noopener noreferrer' href='https://medium.com/@sameer_rao'>Medium</a></button> <button class='font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4'><a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'>LinkedIn</a></button>
                         </div>
+                        <div class='px-10 py-3'><FontAwesomeIcon icon={faChevronDown} /></div>
                     </div>
                     <div class='w-2/5 h-full rounded bg-sameer bg-cover'>
                     </div>
@@ -74,7 +76,7 @@ function Home() {
                     </div>
                     <div className='exp-div'>
                         <div class='w-1/2 h-full'>
-                            <ProjCard bg='bg-sameer' title='UNC Roommates' description='Website built with ReactJS and Firebase that allows students to post and find roommmates at UNC Chapel Hill for housing. Currently live at: uncroommate.com'></ProjCard>
+                            <ProjCard bg='bg-sameer' title='UNC Roommates' description='Website built with ReactJS and Firebase that allows students to post and find roommmates at UNC Chapel Hill for housing. 25 total signups but hoping to scale with improvement. Currently live at: uncroommate.com'></ProjCard>
                         </div>
                         <div class='w-1/2 h-full'>
                             <ProjCard bg='bg-sameer' title={`Dijkastra's Algorithm Graph Simulator`} description={`A Java implementation of Dijkastra's Algorithm using Hashmaps and Priority Queues to create a scalable system that supports millions of nodes while maintaining O(V+ElogV) time complexity.`}></ProjCard>
