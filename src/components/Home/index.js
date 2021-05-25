@@ -40,20 +40,24 @@ function Home() {
                     </div>
                     <div className='exp-div'>
                         <div class='w-1/3 h-full'>
-                            <ExpCard bg='bg-sameer' company='Fidelity' position='Software Engineering Intern' dates='Jun 2021-Present' color='text-green-500' description='TBD'/>
-                            <ExpCard bg='bg-sameer' company='180 Degrees Consulting' position='Project Leader and Consultant' dates='Jan 2020-Present' color='text-green-600' description='TBD'/>
+                            <ExpCard bg='bg-fidelity' company='Fidelity Investments' position='Software Engineering Intern' dates='Jun 2021-Present' color='text-green-500' description='Incoming Summer 2021 Intern. Coming Soon...'/>
+                            <ExpCard bg='bg-180' company='180 Degrees Consulting' position='Project Leader and Consultant' dates='Jan 2020-Present' color='text-green-600' description={`180 Degrees Consulting is the world's largest consultancy for non-profits & social enterprises. We provide high-quality consulting services to social impact organizations.`}/>
                         </div>
                         <div class='w-1/3'>
-                            <ExpCard bg='bg-sameer' company='Jemi' position='Growth Marketing Intern' dates='Sep 2020-May 2021' color='text-pink-500' description='Jemi is a creator monetization company that offers a website builder for creators to easily showcase content, engage with fans, and monetize online.'/>
-                            <ExpCard bg='bg-sameer' company='VRware' position='Virtual Reality Software Engineer' dates='Mar 2020-Dec 2020' color='text-yellow-500' description='TBD'/>
+                            <ExpCard bg='bg-jemi' company='Jemi' position='Growth Marketing Intern' dates='Sep 2020-May 2021' color='text-pink-500' description='Jemi is a creator monetization company that offers a website builder for creators to easily showcase content, engage with fans, and monetize online.'/>
+                            <ExpCard bg='bg-vrware' company='VRware' position='Virtual Reality Software Engineer' dates='Mar 2020-Dec 2020' color='text-yellow-500' description='VRware is a virtual reality startup based out of Chapel Hill, North Carolina, using virtual reality to help prepare entrepreneurs for venture capital pitches.'/>
                         </div>
                         <div class='w-1/3'>
-                            <ExpCard bg='bg-sameer' company='CS+Social Good' position='Full Stack Engineer' dates='Jul 2020-Present' color='text-green-400' description='TBD'/>
-                            <ExpCard bg='bg-sameer' company='Cisco' position='Summer Extern' dates='Jun 2018-Jul 2018' color='text-blue-900' description='TBD'/>
+                            <ExpCard bg='bg-cssg' company='CS+Social Good' position='Full Stack Engineer' dates='Jul 2020-Present' color='text-green-400' description='An organization of technologists, designers, and thinkers passionate about maximizing the benefits of technology and mitigating its harms. Members of CS+Social Good work with local organizations to help digitize their efforts.'/>
+                            <ExpCard bg='bg-cisco' company='Cisco Systems' position='Summer Extern' dates='Jun 2018-Jul 2018' color='text-blue-900' description='The Cisco High summer externship is a 4 week opportunity for the top high school students in North Carolina to learn about Cisco, Cybersecurity, design thinking, personal branding, and the Internet of Things (IoT).'/>
                         </div>
                     </div>
 
                 </div>
+
+            </div>
+
+            <div class='flex justify-center items-center w-screen h-screen'>
 
             </div>
 

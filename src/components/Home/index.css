@@ -4,17 +4,18 @@
 
 .exp-title {
     width: 100%;
-    height: 11%;
+    height: 13%;
 }
 
 .exp-div {
-    height: 89%;
+    height: 87%;
     display: flex;
 }
 
 .exp-section {
-    width: 91.67%;
+    width: 91.666667%;
     height: 95%;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1536px;;
 }
