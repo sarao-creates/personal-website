@@ -5,11 +5,12 @@ import ProjCard from '../ProjCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSpotify, faInstagram, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
-
+import {faGem} from '@fortawesome/free-regular-svg-icons';
 
 function Home() {
     return (
         <div className='main'>
+            <NavBar />
             <div class='flex justify-center items-center w-screen h-screen'>
                 <div class='flex container mx-auto w-11/12 h-5/6'>
                     <div class='w-3/5 h-full' >
@@ -45,7 +46,7 @@ function Home() {
                         <div class='w-4/5 inline-block'>
                             <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Experience</h1>
                         </div>
-                        <button class='font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all experiences</button>
+                        <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'><button class='font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all experiences</button></a>
                     </div>
                     <div className='exp-div'>
                         <div class='w-1/3 h-full'>
@@ -94,7 +95,8 @@ function Home() {
                             <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Connect with me</h1>
                             <p class='font-mono font-regular text-2xl px-10 py-5'>I love meeting new people. You can shoot me an email at <u>sameer_rao@kenan-flagler.unc.edu</u> or connect with me on social media below.</p>
                             <div class='px-10'>
-                                <div class='inline'><a target='_blank' rel='noopener noreferrer' href='https://instagram.com/sameer__rao'><FontAwesomeIcon icon={faInstagram} size='3x'/></a></div>
+                                <div class='inline'><a target='_blank' rel='noopener noreferrer' href='https://jemi.app/sameer'><FontAwesomeIcon icon={faGem} size='3x'/></a></div>
+                                <div class='ml-5 inline'><a target='_blank' rel='noopener noreferrer' href='https://instagram.com/sameer__rao'><FontAwesomeIcon icon={faInstagram} size='3x'/></a></div>
                                 <div class='ml-5 inline'><a target='_blank' rel='noopener noreferrer' href='https://twitter.com/SameerRaoVC'><FontAwesomeIcon icon={faTwitter} size='3x'/></a></div>
                                 <div class='ml-5 inline'><a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'><FontAwesomeIcon icon={faLinkedin} size='3x'/></a></div>
                                 <div class='ml-5 inline'><a target='_blank' rel='noopener noreferrer' href='https://open.spotify.com/user/sam.i.am01?si=eb3db51c15d34fe3'><FontAwesomeIcon icon={faSpotify} size='3x'/></a></div>
