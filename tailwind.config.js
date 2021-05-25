@@ -14,6 +14,9 @@ module.exports = {
         'cssg': "url('/src/assets/experience/cssg.png')",
         '180': "url('/src/assets/experience/180.png')",
         'vrware': "url('/src/assets/experience/vrware.png')",
+        'unc-roommates': "url('/src/assets/projects/proj1.png')",
+        'dij': "url('/src/assets/projects/proj2.png')",
+
        })
     },
   },
