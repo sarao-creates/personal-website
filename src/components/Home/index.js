@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSpotify, faInstagram, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import {faGem} from '@fortawesome/free-regular-svg-icons';
+import {Link} from 'react-router-dom';
 
 function Home() {
     return (
@@ -73,7 +74,7 @@ function Home() {
                         <div class='w-4/5 inline-block'>
                             <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Projects</h1>
                         </div>  
-                        <button class='font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all projects</button>          
+                        <Link to='projects'><button class='font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all projects</button></Link>          
                     </div>
                     <div className='exp-div'>
                         <div class='w-1/2 h-full'>
