@@ -1,13 +1,14 @@
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ProjCard from '../ProjCard';
+import ProjItem from '../ProjItem';
 import './index.css';
 
 function Projects() {
     return(
         <div className='main'>
             <NavBar></NavBar>
-            <div class='flex justify-center items-center w-screen h-screen'>
+            <div class='flex justify-center items-center w-screen'>
                 <div className='proj-section'>
                     <div className='proj-title'>
                         <div class='w-4/5 inline-block'>
@@ -39,7 +40,7 @@ function Projects() {
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Java</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>JavaScript</span>
                                 </div>
-                                <div class='px-20 py-4 flex items-center space-x-3'>
+                                 <div class='px-20 py-4 flex items-center space-x-3'>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Jupyter Notebooks</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Node.js</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Pandas</span>
@@ -49,8 +50,14 @@ function Projects() {
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>SQL</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Unreal Engine</span>
                                  </div>
-
+                                 
                              </div>
+
+                             <ProjItem title='UNC Roommates' techstack='React, Firebase, Axios, Material-UI, Google Maps API' description={`I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`} github={true} gitlink={'https://github.com/sarao-creates/UNCRoommates'} more={true}></ProjItem>
+                             <ProjItem></ProjItem>
+
+                             <ProjItem></ProjItem>
+
                         </div>
                     </div>
                 </div>

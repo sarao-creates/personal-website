@@ -47,7 +47,7 @@ function Home() {
                         <div class='w-4/5 inline-block'>
                             <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Experience</h1>
                         </div>
-                        <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'><button class='font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all experiences</button></a>
+                        <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'><button class='focus:outline-none font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all experiences</button></a>
                     </div>
                     <div className='exp-div'>
                         <div class='w-1/3 h-full'>
@@ -74,7 +74,7 @@ function Home() {
                         <div class='w-4/5 inline-block'>
                             <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Projects</h1>
                         </div>  
-                        <Link to='projects'><button class='font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all projects</button></Link>          
+                        <Link to='projects'><button class='focus:outline-none font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all projects</button></Link>          
                     </div>
                     <div className='exp-div'>
                         <div class='w-1/2 h-full'>
