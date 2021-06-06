@@ -8,8 +8,9 @@ import {useState} from 'react';
 function Projects() {
 
     const [techArr, setTechArr] = useState([]);
+    const [boolSelect, setBoolSelect] = useState(false);
 
-    const comp_projs = [
+    const projs = [
         {
             title: 'UNC Roommates',
             techstack: ['React', 'JavaScript', 'Firebase', 'Axios', 'Material-UI', 'Google Maps API'],
@@ -17,6 +18,7 @@ function Projects() {
             github: true,
             gitlink: 'https://github.com/sarao-creates/UNCRoommates',
             more: true,
+            type: 'Tech'
         },
         {
             title: 'Sup Roommates',
@@ -25,9 +27,23 @@ function Projects() {
             github: true,
             gitlink: 'https://github.com/sarao-creates/UNCRoommates',
             more: true,
+            type: 'Tech',
         }
         
     ]
+
+    const [projList, setProjList] = useState(projs.filter(proj => proj.type === 'Tech').map(proj => <ProjItem info={proj}></ProjItem>))
+
+
+    
+    const handleSelect = () => {
+        setBoolSelect(prevSelect => !prevSelect);
+        if (boolSelect === true) {
+            setProjList(projs.filter(proj => proj.type === 'Tech').map(proj => <ProjItem info={proj}></ProjItem>));
+        } else {
+            setProjList(projs.filter(proj => proj.type === 'Business').map(proj => <ProjItem info={proj}></ProjItem>));
+        }
+    }
 
     const handleCheck = () => {
         console.log('test')
@@ -52,9 +68,9 @@ function Projects() {
                                  </div>
  
                                  <div class='w-1/3 inline-block px-3'>
-                                     <select class='w-full h-12 rounded px-3 focus:outline-none border-black border border-solid'>
-                                         <option value='tech'>Tech</option>
-                                         <option value='business'>Business</option>
+                                     <select onChange={handleSelect} class='w-full h-12 rounded px-3 focus:outline-none border-black border border-solid'>
+                                         <option selected value='Tech'>Tech</option>
+                                         <option value='Business'>Business</option>
                                      </select>
                                  </div>
 
@@ -88,7 +104,8 @@ function Projects() {
 
                              <ProjItem></ProjItem> */}
                              {
-                                 comp_projs.filter(proj => proj.techstack.includes('React') || proj.techstack.includes('Firebase')).map(proj => <ProjItem info={proj}></ProjItem>)
+                                //  comp_projs.filter(proj => proj.techstack.includes('React') || proj.techstack.includes('Firebase')).map(proj => <ProjItem info={proj}></ProjItem>)
+                                projList
                              }
 
                         </div>
