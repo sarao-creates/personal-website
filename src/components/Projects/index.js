@@ -3,8 +3,37 @@ import NavBar from '../NavBar';
 import ProjCard from '../ProjCard';
 import ProjItem from '../ProjItem';
 import './index.css';
+import {useState} from 'react';
 
 function Projects() {
+
+    const [techArr, setTechArr] = useState([]);
+
+    const comp_projs = [
+        {
+            title: 'UNC Roommates',
+            techstack: ['React', 'JavaScript', 'Firebase', 'Axios', 'Material-UI', 'Google Maps API'],
+            description: `I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`,
+            github: true,
+            gitlink: 'https://github.com/sarao-creates/UNCRoommates',
+            more: true,
+        },
+        {
+            title: 'Sup Roommates',
+            techstack: ['Firebase'],
+            description: `s up`,
+            github: true,
+            gitlink: 'https://github.com/sarao-creates/UNCRoommates',
+            more: true,
+        }
+        
+    ]
+
+    const handleCheck = () => {
+        console.log('test')
+        
+    }
+
     return(
         <div className='main'>
             <NavBar></NavBar>
@@ -37,6 +66,7 @@ function Projects() {
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Firebase</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Flask</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>HTML/CSS</span>
+                                     <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>jQuery</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Java</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>JavaScript</span>
                                 </div>
@@ -46,17 +76,20 @@ function Projects() {
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Pandas</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Postman</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Python</span>
-                                     <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>React</span>
+                                     <input onChange={handleCheck} type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>React</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>SQL</span>
                                      <input type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md'></input> <span class='text-gray-900 font-medium text-lg'>Unreal Engine</span>
                                  </div>
                                  
                              </div>
 
-                             <ProjItem title='UNC Roommates' techstack='React, Firebase, Axios, Material-UI, Google Maps API' description={`I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`} github={true} gitlink={'https://github.com/sarao-creates/UNCRoommates'} more={true}></ProjItem>
+                             {/* <ProjItem title='UNC Roommates' techstack='React, Firebase, Axios, Material-UI, Google Maps API' description={`I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`} github={true} gitlink={'https://github.com/sarao-creates/UNCRoommates'} more={true}></ProjItem>
                              <ProjItem></ProjItem>
 
-                             <ProjItem></ProjItem>
+                             <ProjItem></ProjItem> */}
+                             {
+                                 comp_projs.filter(proj => proj.techstack.includes('React') || proj.techstack.includes('Firebase')).map(proj => <ProjItem info={proj}></ProjItem>)
+                             }
 
                         </div>
                     </div>
