@@ -1,0 +1,21 @@
+.main {
+    background-color: #f7f7f7;
+}
+
+.proj-title {
+    width: 100%;
+    height: 13%;
+}
+
+.proj-div {
+    height: 87%;
+    width: 100%;
+}
+
+.proj-section {
+    width: 91.666667%;
+    height: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1536px;;
+}
