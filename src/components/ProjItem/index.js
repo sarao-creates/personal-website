@@ -1,14 +1,13 @@
 import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
-import {Link} from 'react-router-dom';
-import {faInfo, faInfoCircle} from '@fortawesome/free-solid-svg-icons';
+import {faInfoCircle} from '@fortawesome/free-solid-svg-icons';
 
 
 function ProjItem(props) {
 
     const checkButtons = () => {
-        if (props.info.github == true && props.info.more == true) {
+        if (props.info.github === true && props.info.more === true) {
             return (
                 <div class='pt-3'>
                     <a href={props.gitlink} target='_blank' rel='noopener noreferrer'><button class='focus:outline-none'><FontAwesomeIcon icon={faGithub} size='2x'></FontAwesomeIcon></button></a>
@@ -16,7 +15,7 @@ function ProjItem(props) {
                 </div>
             )
         }
-        else if (props.info.github==true) {
+        else if (props.info.github === true) {
             return (
                 <div class='pt-3'>
                     <a href={props.info.gitlink} target='_blank' rel='noopener noreferrer'><button><FontAwesomeIcon icon={faGithub} size='2x'></FontAwesomeIcon></button></a>
