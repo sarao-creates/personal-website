@@ -12,12 +12,12 @@ function Home() {
     return (
         <div className='main'>
             <NavBar />
-            <div class='flex justify-center items-center w-screen h-screen'>
-                <div class='flex container mx-auto w-11/12 h-5/6'>
-                    <div class='w-3/5 h-full' >
-                        <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Sameer Rao</h1>
-                        <div class='px-10 py-5'>
-                            <p class='font-mono font-medium text-2xl'>I'm a junior at <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a> studying Computer Science and Business Administration as a double major.
+            <div class='flex justify-center items-center w-screen h-screen sm:h-full'>
+                <div class='flex container mx-auto w-11/12 h-5/6 sm:w-full sm:flex-col-reverse'>
+                    <div class='w-3/5 h-full sm:w-full sm:block' >
+                        <h1 class='font-mono font-extrabold text-6xl px-10 py-5 sm:block sm:w-full sm:px-7 sm:text-center sm:py-3 sm:text-5xl'>Sameer Rao</h1>
+                        <div class='px-10 py-5 sm:block sm:px-7 sm:py-3'>
+                            <p class='font-mono font-medium text-2xl sm:text-base sm:text-center'>I'm a junior at <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a> studying Computer Science and Business Administration as a double major.
                                 I'm interested in product, consulting, statups, and the creator economy. Learn more about me <u>here</u>.
                                 <br /> <br />
                                 My dream job is to help companies–whether its building out products, scaling their customer base, or advising as a third-party.
@@ -29,12 +29,12 @@ function Home() {
                             </p>
                         </div>
 
-                        <div class='px-10 py-3'>
-                            <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-5'><a target='_blank' rel='noopener noreferrer' href='https://twitter.com/SameerRaoVC'>Twitter</a></button> <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4'><a target='_blank' rel='noopener noreferrer' href='https://medium.com/@sameer_rao'>Medium</a></button> <button class='font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4'><a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'>LinkedIn</a></button>
+                        <div class='px-10 py-3 sm:px-7'>
+                            <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-5 sm:px-3'><a target='_blank' rel='noopener noreferrer' href='https://twitter.com/SameerRaoVC'>Twitter</a></button> <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4 sm:px-3'><a target='_blank' rel='noopener noreferrer' href='https://medium.com/@sameer_rao'>Medium</a></button> <button class='font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4 sm:px-3'><a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'>LinkedIn</a></button>
                         </div>
-                        <div class='px-10 py-3'><FontAwesomeIcon icon={faChevronDown} /></div>
-                    </div>
-                    <div class='w-2/5 h-full rounded bg-sameer bg-cover'>
+                        <div class='px-10 py-3 sm:hidden'><FontAwesomeIcon icon={faChevronDown} /></div>
+                    </div> 
+                    <div class='w-2/5 h-full rounded bg-sameer bg-cover sm:block sm:relative sm:top-0 sm:h-72 mt-20 sm:w-5/6 sm:mx-auto sm:bg-sameer-mob'>
                     </div>
 
                 </div>

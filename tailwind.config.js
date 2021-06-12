@@ -5,9 +5,17 @@ module.exports = {
     boxShadow: {
       'proj': '0 0 6px 0 rgb(58, 58, 58, 0.15)',
     },
+    screens: {
+      '2xl': {'max': '1535px'},
+      'xl': {'max': '1279px'},
+      'lg': {'max': '1023px'},
+      'md': {'max': '767px'},
+      'sm': {'max': '639px'},
+    },
     extend: {
       backgroundImage: theme => ({
         'sameer': "url('/src/assets/sameer.jpeg')",
+        'sameer-mob': "url('/src/assets/sameer-mobile.png')",
         'fidelity': "url('/src/assets/experience/fidelity.png')",
         'cisco': "url('/src/assets/experience/cisco.png')",
         'jemi': "url('/src/assets/experience/jemi.png')",
@@ -19,6 +27,7 @@ module.exports = {
 
        })
     },
+    
   },
   variants: {
     extend: {
