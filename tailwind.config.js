@@ -1,3 +1,5 @@
+const { faCalculator } = require("@fortawesome/free-solid-svg-icons");
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -9,8 +11,9 @@ module.exports = {
       '2xl': {'max': '1535px'},
       'xl': {'max': '1279px'},
       'lg': {'max': '1023px'},
-      'md': {'max': '767px'},
-      'sm': {'max': '639px'},
+      // 'md': {'max': '767px'},
+      // 'sm': {'max': '639px'},
+      'sm': {'max': '767px'},
     },
     extend: {
       backgroundImage: theme => ({
@@ -25,7 +28,11 @@ module.exports = {
         'unc-roommates': "url('/src/assets/projects/proj1.png')",
         'dij': "url('/src/assets/projects/proj2.png')",
 
-       })
+       }),
+
+       height: {
+         'exp': 'calc(0.5 * 100vw)',
+       }
     },
     
   },

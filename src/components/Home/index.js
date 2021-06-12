@@ -29,7 +29,7 @@ function Home() {
                             </p>
                         </div>
 
-                        <div class='px-10 py-3 sm:px-7'>
+                        <div class='px-10 py-3 sm:px-7 sm:text-center'>
                             <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-5 sm:px-3'><a target='_blank' rel='noopener noreferrer' href='https://twitter.com/SameerRaoVC'>Twitter</a></button> <button class='mr-3 font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4 sm:px-3'><a target='_blank' rel='noopener noreferrer' href='https://medium.com/@sameer_rao'>Medium</a></button> <button class='font-mono font-bold hover:bg-blue-400 rounded-lg bg-blue-200 py-3 px-4 sm:px-3'><a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'>LinkedIn</a></button>
                         </div>
                         <div class='px-10 py-3 sm:hidden'><FontAwesomeIcon icon={faChevronDown} /></div>
@@ -41,24 +41,24 @@ function Home() {
             
             </div>
 
-            <div class='flex justify-center items-center w-screen h-screen'>
+            <div class='flex justify-center items-center w-screen h-screen sm:h-full'>
                 <div className='exp-section'>
                     <div className='exp-title'>
-                        <div class='w-4/5 inline-block'>
-                            <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Experience</h1>
+                        <div class='w-4/5 inline-block sm:w-full'>
+                            <h1 class='font-mono font-extrabold text-6xl px-10 py-5 sm:block sm:w-full sm:px-7 sm:text-center sm:py-3 sm:text-5xl'>Experience</h1>
                         </div>
-                        <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'><button class='focus:outline-none font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all experiences</button></a>
+                        <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/sameer-r/'><button class='focus:outline-none font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2 sm:block sm:mx-auto sm:mt-3 sm:mb-6'>See all experiences</button></a>
                     </div>
                     <div className='exp-div'>
-                        <div class='w-1/3 h-full'>
+                        <div class='w-1/3 h-full sm:w-full sm:h-auto'>
                             <ExpCard bg='bg-fidelity' company='Fidelity Investments' position='Software Engineering Intern' dates='Jun 2021-Present' color='text-green-500' description='Incoming Summer 2021 Intern. Coming Soon...'/>
                             <ExpCard bg='bg-180' company='180 Degrees Consulting' position='Project Leader and Consultant' dates='Jan 2020-Present' color='text-green-600' description={`180 Degrees Consulting is the world's largest consultancy for non-profits & social enterprises. We provide high-quality consulting services to social impact organizations.`}/>
                         </div>
-                        <div class='w-1/3'>
+                        <div class='w-1/3 sm:w-full'>
                             <ExpCard bg='bg-jemi' company='Jemi' position='Growth Marketing Intern' dates='Sep 2020-May 2021' color='text-pink-500' description='Jemi is a creator monetization company that offers a website builder for creators to easily showcase content, engage with fans, and monetize online.'/>
                             <ExpCard bg='bg-vrware' company='VRware' position='Virtual Reality Software Engineer' dates='Mar 2020-Dec 2020' color='text-yellow-500' description='VRware is a virtual reality startup based out of Chapel Hill, North Carolina, using virtual reality to help prepare entrepreneurs for venture capital pitches.'/>
                         </div>
-                        <div class='w-1/3'>
+                        <div class='w-1/3 sm:w-full'>
                             <ExpCard bg='bg-cssg' company='CS+Social Good' position='Full Stack Engineer' dates='Jul 2020-Present' color='text-green-400' description='An organization of technologists, designers, and thinkers passionate about maximizing the benefits of technology and mitigating its harms. Members of CS+Social Good work with local organizations to help digitize their efforts.'/>
                             <ExpCard bg='bg-cisco' company='Cisco Systems' position='Summer Extern' dates='Jun 2018-Jul 2018' color='text-blue-900' description='The Cisco High summer externship is a 4 week opportunity for the top high school students in North Carolina to learn about Cisco, Cybersecurity, design thinking, personal branding, and the Internet of Things (IoT).'/>
                         </div>
@@ -68,19 +68,19 @@ function Home() {
 
             </div>
 
-            <div class='flex justify-center items-center w-screen h-screen'>
+            <div class='flex justify-center items-center w-screen h-screen sm:h-auto'>
                 <div className='exp-section'>
                     <div className='exp-title'>
-                        <div class='w-4/5 inline-block'>
-                            <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Projects</h1>
+                        <div class='w-4/5 inline-block sm:w-full'>
+                            <h1 class='font-mono font-extrabold text-6xl px-10 py-5 sm:block sm:w-full sm:px-7 sm:text-center sm:py-3 sm:text-5xl'>Projects</h1>
                         </div>  
-                        <Link to='projects'><button class='focus:outline-none font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2'>See all projects</button></Link>          
+                        <Link to='projects'><button class='focus:outline-none font-mono hover:bg-blue-400 rounded-lg bg-blue-200 py-2 px-2 sm:block sm:mx-auto sm:mt-3 sm:mb-6'>See all projects</button></Link>          
                     </div>
                     <div className='exp-div'>
-                        <div class='w-1/2 h-full'>
+                        <div class='w-1/2 h-full sm:w-full sm:h-auto'>
                             <ProjCard bg='bg-unc-roommates' title='UNC Roommates' description='Website built with ReactJS, Firebase, and Google Maps API that allows students to post and find roommmates at UNC Chapel Hill for housing. 25 total signups but hoping to scale with improvement. Currently live at: uncroommate.com'></ProjCard>
                         </div>
-                        <div class='w-1/2 h-full'>
+                        <div class='w-1/2 h-full sm:w-full sm:h-auto'>
                             <ProjCard bg='bg-dij' title={`Dijkastra's Algorithm Graph Simulator`} description={`A Java implementation of Dijkastra's Algorithm using Hashmaps and Priority Queues to create a scalable system that supports millions of nodes while maintaining O(V+ElogV) time complexity.`}></ProjCard>
                         </div>
                     </div>

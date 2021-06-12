@@ -2,7 +2,7 @@ import './index.css';
 
 function ProjCard(props) {
     return(
-        <div class='h-full w-full'>
+        <div class='h-full w-full sm:h-auto sm:mb-7'>
             <div className='height-wrapper'>
                 <div class='h-full w-11/12 mx-auto shadow-proj z-10 rounded-lg overflow-hidden'>
                     <div class='h-1/5 w-full mx-auto'>
