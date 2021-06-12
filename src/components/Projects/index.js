@@ -3,7 +3,6 @@ import NavBar from '../NavBar';
 import ProjItem from '../ProjItem';
 import './index.css';
 import {useState, useEffect} from 'react';
-import { faBullseye } from '@fortawesome/free-solid-svg-icons';
 
 function Projects() {
     const [boolSelect, setBoolSelect] = useState(false);
