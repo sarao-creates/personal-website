@@ -28,7 +28,7 @@ function Projects() {
         },
         {
             title: 'Personal Website',
-            techstack: ['React', 'TailwindCSS', 'JavaScript', 'HTML/CSS'],
+            techstack: ['React', 'TailwindCSS', 'JavaScript', 'AWS (S3)', 'HTML/CSS'],
             description: `I've always wanted a personal website for myself–a place that I can look back on years later and reminisce on projects. It's also a great way to improve personal branding and coding skills! (...and I can plug in social media bios)`,
             github: true,
             gitlink: 'https://github.com/sarao-creates/personal-website',
