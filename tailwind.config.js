@@ -27,7 +27,12 @@ module.exports = {
         'vrware': "url('/src/assets/experience/vrware.png')",
         'unc-roommates': "url('/src/assets/projects/proj1.png')",
         'dij': "url('/src/assets/projects/proj2.png')",
-
+        'basilica':"url('/src/assets/photography/basilica.jpg')",
+        'eiffel':"url('/src/assets/photography/eiffel-tower.jpg')",
+        'ferris':"url('/src/assets/photography/ferris-wheel.jpg')",
+        'municipal':"url('/src/assets/photography/municipal.jpg')",
+        'parthenon':"url('/src/assets/photography/parthenon.jpg')",
+        'sacre':"url('/src/assets/photography/sacre-couer.jpg')",
        }),
 
        height: {

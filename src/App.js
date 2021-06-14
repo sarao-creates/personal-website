@@ -1,6 +1,7 @@
 import HomeComponent from './components/Home';
 import ProjectComponent from './components/Projects';
 import WritingComponent from './components/Writing';
+import MoreComponent from './components/More';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path='/writing'>
           <WritingComponent />
+        </Route>
+        <Route path='/more'>
+          <MoreComponent />
         </Route>
       </Switch>
     </Router>

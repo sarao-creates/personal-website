@@ -70,6 +70,15 @@ function Projects() {
             gitlink: 'https://github.com/sarao-creates/ThreeGamesOneDesign',
             more: false,
             type: 'Tech',
+        },
+        {
+            title: 'RESTful Interface for Developing Exam Questions',
+            techstack: ['Python', 'SQL', 'Postman'],
+            description: `This project is the backend for a web application for developing exam questions for a database class. Create multiple choice, short answer, or SQL questions using custom routes, stored in a SQL database backend. Learn more about the routes and how to use them at the Github repo below.`,
+            github: true,
+            gitlink: 'https://github.com/sarao-creates/exam-question-backend',
+            more: false,
+            type: 'Tech',
         }
         
     ]
@@ -137,11 +146,11 @@ function Projects() {
                 <div className='proj-section'>
                     <div className='proj-title'>
                         <div class='w-4/5 inline-block'>
-                            <h1 class='font-mono font-extrabold text-6xl px-10 py-5'>Projects</h1>
+                            <h1 class='font-mono font-extrabold text-6xl px-32 py-5'>Projects</h1>
                         </div>  
                     </div>
                     <div className='proj-div'>
-                        <div class='px-10 w-full'>
+                        <div class='px-10 w-full pt-5'>
                              <div class='mx-auto w-4/5 h-52 bg-blue-200 rounded'>
                                  <div class='pt-5 px-3 w-2/3 inline-block'>
                                     <input onChange={handleSearch} class='w-full h-12 px-3 rounded focus:outline-none border-black border border-solid' type='text' placeholder="Search project"></input>
