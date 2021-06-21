@@ -23,7 +23,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "build-and-deploy": "npm run build && s3cmd sync build/* s3://sameerrao.xyz && echo '🚀  Deployed!'"
+    "build-and-deploy": "npm run build && s3cmd sync build/* s3://sameer-rao.com && echo '🚀  Deployed!'"
 
   },
   "eslintConfig": {

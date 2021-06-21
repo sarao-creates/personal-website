@@ -32,19 +32,16 @@ function ProjItem(props) {
     }
 
     return(
-        <div class='mx-auto w-3/4 mt-10 h-80 bg-purple-50 border-2 border-solid border-blue-200 rounded'>
+        <div class='mx-auto w-3/4 mt-10 h-80 bg-purple-50 border-2 border-solid border-blue-200 rounded sm:w-11/12'>
             <div id='content' class='py-5 px-5 flex w-full h-full'>
-                <div class='w-2/5 bg-blue-200 h-full'></div>
-                <div class='w-3/5 px-3'>
-                    <h1 class='font-bold font-sans text-3xl'>{props.info.title}</h1>
+                <div class='w-2/5 bg-blue-200 h-full sm:hidden'></div>
+                <div class='w-3/5 px-3 sm:w-full'>
+                    <h1 class='font-bold font-sans text-3xl sm:text-2xl'>{props.info.title}</h1>
                     <h3 class='font-sans text-lg font-normal leading-snug'>Technologies used: {props.info.techstack.length === 1 ? props.info.techstack[0] : props.info.techstack.slice(0, props.info.techstack.length - 1).join(', ') + ", and " + props.info.techstack.slice(-1)}</h3>
-                    <div className='desc-div'>
-                        <p className='desc-overflow'>{props.info.description}</p>
-                    </div>
-                    
+                    <div className='proj-desc-div'>
+                        <p className='proj-desc-overflow'>{props.info.description}</p>
+                    </div>                
                     {checkButtons()}
-                    
-
                 </div>
             </div>
 

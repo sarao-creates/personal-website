@@ -20,3 +20,18 @@
     max-width: 1536px;
     padding-top: 50px;
 }
+
+@media only screen and (max-width: 767px) {
+    .proj-section {
+        height: auto;
+        width: 100%;
+    }
+    .proj-title {
+        height: auto;
+    }
+
+    .proj-div {
+        height: auto;
+        
+    }
+}

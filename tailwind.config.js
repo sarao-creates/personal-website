@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'sameer': "url('/src/assets/sameer.jpeg')",
+        'sameer': "url('/src/assets/sameer-test.jpg')",
         'sameer-mob': "url('/src/assets/sameer-mobile.png')",
         'fidelity': "url('/src/assets/experience/fidelity.png')",
         'cisco': "url('/src/assets/experience/cisco.png')",
