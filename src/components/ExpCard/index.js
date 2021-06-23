@@ -4,9 +4,9 @@ function ExpCard(props) {
     return(
         <div class='h-1/2 w-full sm:h-auto sm:mb-7'>
             <div className='height-wrapper'>
-                <div class='h-full w-4/6 mx-auto sm:w-full'>
-                    <div class='h-1/2 w-full mx-auto shadow-lg z-10'>
-                        <div class={`${props.bg} bg-cover h-full w-full rounded-lg sm:h-exp`}>
+                <div class='h-full w-4/6 mx-auto sm:w-full lg:w-11/12'>
+                    <div class='h-1/2 w-full mx-auto shadow-lg z-10 lg:h-auto'>
+                        <div class={`${props.bg} bg-cover h-full w-full rounded-lg sm:h-exp lg:h-tablet-exp`}>
 
                         </div>
                     </div>

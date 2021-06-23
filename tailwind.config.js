@@ -37,7 +37,13 @@ module.exports = {
 
        height: {
          'exp': 'calc(0.5 * 100vw)',
-       }
+         'tablet-exp': 'calc(0.15*100vw)'
+       },
+
+       fontSize: {
+         'home-about': ['1.6vw', '1.5rem'],
+         'home-about-xl': ['1.3vw', '2rem'],
+       },
     },
     
   },
