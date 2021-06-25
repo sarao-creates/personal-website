@@ -9,6 +9,7 @@ function Projects() {
 
     const projs = [
         {
+            bg: 'bg-unc-roommates',
             title: 'UNC Roommates',
             techstack: ['React', 'JavaScript', 'Firebase', 'Axios', 'Material-UI', 'Google Maps API', 'Stripe API', 'HTML/CSS'],
             description: `I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`,
@@ -18,6 +19,7 @@ function Projects() {
             type: 'Tech'
         },
         {
+            bg: 'bg-cftk',
             title: 'Carolina for the Kids – Canvassing Portal',
             techstack: ['React', 'Firebase', 'Google Maps API', 'Material-UI', 'JavaScript', 'HTML/CSS'],
             description: `This was my first expeience using React and Firebase. I collaborated with six other UNC students to create a web app for Carolina for the Kids. Over the 7-month project, we went from initial Figma designs to a finished product. Click to learn more about the need for this project!`,
@@ -27,6 +29,7 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-website',
             title: 'Personal Website',
             techstack: ['React', 'TailwindCSS', 'JavaScript', 'AWS (S3)', 'HTML/CSS'],
             description: `I've always wanted a personal website for myself–a place that I can look back on years later and reminisce on projects. It's also a great way to improve personal branding and coding skills! (...and I can plug in social media bios)`,
@@ -36,6 +39,7 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-dij',
             title: `Dijkstra's Algorithm Scalable Simuation`,
             techstack: ['Java', 'HashMap', 'Priority Queue', 'Graphs', 'Object-Oriented Programming'],
             description: `Plain Java ...`,
@@ -45,6 +49,7 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-vr',
             title: `Virtual Reality Application for Pitch Practice`,
             techstack: ['Unreal Engine', 'C++', 'Oculus Quest'],
             description: `Created VR scenes with another student for VRware.`,
@@ -54,6 +59,7 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-2048',
             title: '2048 Online Game',
             techstack: ['JavaScript', 'React', 'HTML/CSS'],
             description: `2048 is a game...`,
@@ -63,6 +69,7 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-three-games',
             title: 'Three Games, One Design',
             techstack: ['Java', 'Swing'],
             description: `Created Tic Tac Toe, Connect Four, and Othello using Java and the Swing GUI library.`,
@@ -72,6 +79,7 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-rest-backend',
             title: 'RESTful Interface for Developing Exam Questions',
             techstack: ['Python', 'SQL', 'Postman'],
             description: `This project is the backend for a web application for developing exam questions for a database class. Create multiple choice, short answer, or SQL questions using custom routes, stored in a SQL database backend. Learn more about the routes and how to use them at the Github repo below.`,
@@ -81,9 +89,10 @@ function Projects() {
             type: 'Tech',
         },
         {
+            bg: 'bg-donuts',
             title: 'Do-Nut Have Cookies',
             techstack: ['Entrepreneurship', 'Sales'],
-            description: `FILL IN LATER`,
+            description: `Fun 1-month entrepreneurship initiative for my BUSI 188 class. We were given $50 and asked to raise as much money as we could in a month. So...my team and I sold donuts to students on campus, with a healthy twist :) We ended up raising $350 and a class total of $850 for UN Population Fund.`,
             github: false,
             gitlink: '',
             more: true,
@@ -194,19 +203,9 @@ function Projects() {
                                      <input id='sql' type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md projCheck' value='SQL'></input> <label for='sql' class='text-gray-900 font-medium text-lg'>SQL</label>
                                      <input id='unreal' type="checkbox" class='h-5 w-5 focus:outline-none border-gray-300 rounded-md projCheck' value='Unreal Engine'></input> <label for='unreal' class='text-gray-900 font-medium text-lg'>Unreal Engine</label>
                                  </div>
-                                 {/* <div>
-                                     <button onClick={() => handleClick('test1')}>test1</button>
-                                     <button onClick={() => handleClick('test2')}>test2</button>
-                                 </div> */}
                                  
                              </div>
-
-                             {/* <ProjItem title='UNC Roommates' techstack='React, Firebase, Axios, Material-UI, Google Maps API' description={`I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`} github={true} gitlink={'https://github.com/sarao-creates/UNCRoommates'} more={true}></ProjItem>
-                             <ProjItem></ProjItem>
-
-                             <ProjItem></ProjItem> */}
                              {
-                                //  comp_projs.filter(proj => proj.techstack.includes('React') || proj.techstack.includes('Firebase')).map(proj => <ProjItem info={proj}></ProjItem>)
                                 projList
                              }
 

@@ -10,7 +10,7 @@ function ProjCard(props) {
                         <p className='proj-card-description'>{props.description}</p>
                     </div>
                     <div class='h-4/5 w-full mx-auto'>
-                        <div class={`${props.bg} bg-cover h-full w-full`}>
+                        <div class={`${props.bg} bg-cover h-full w-full lg:w-proj`}>
                         </div>    
                     </div>
                 </div>

@@ -27,6 +27,13 @@ module.exports = {
         'vrware': "url('/src/assets/experience/vrware.png')",
         'unc-roommates': "url('/src/assets/projects/proj1.png')",
         'dij': "url('/src/assets/projects/proj2.png')",
+        'website': "url('/src/assets/projects/personal-website.png')",
+        'cftk': "url('/src/assets/projects/cftk.png')",
+        'vr': "url('/src/assets/projects/vr.png')",
+        '2048': "url('/src/assets/projects/2048.png')",
+        'three-games': "url('/src/assets/projects/three-games.png')",
+        'rest-backend': "url('/src/assets/projects/rest-backend.png')",
+        'donuts': "url('/src/assets/projects/donuts.png')",
         'basilica':"url('/src/assets/photography/basilica.jpg')",
         'eiffel':"url('/src/assets/photography/eiffel-tower.jpg')",
         'ferris':"url('/src/assets/photography/ferris-wheel.jpg')",
@@ -37,9 +44,11 @@ module.exports = {
 
        height: {
          'exp': 'calc(0.5 * 100vw)',
-         'tablet-exp': 'calc(0.15*100vw)'
+         'tablet-exp': 'calc(0.15*100vw)',
        },
-
+       width: {
+         'proj': 'calc(0.4*100vw)',
+       },
        fontSize: {
          'home-about': ['1.6vw', '1.5rem'],
          'home-about-xl': ['1.3vw', '2rem'],
