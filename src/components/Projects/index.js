@@ -213,8 +213,11 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <div class='pt-10'>
+            {/* <div class='pt-10'>
                 <Footer></Footer>
+            </div> */}
+            <div class='h-12'>
+
             </div>
             
 

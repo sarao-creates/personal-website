@@ -3,10 +3,12 @@ import ProjectComponent from './components/Projects';
 import WritingComponent from './components/Writing';
 import MoreComponent from './components/More';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route exact path='/'>
           <HomeComponent/>

@@ -22,6 +22,7 @@ function More() {
                 <p class='font-mono text-base pt-8 sm:text-center'>Music.</p>
 
             </div>
+            <div class='h-12'></div>
         </div>
     )
 

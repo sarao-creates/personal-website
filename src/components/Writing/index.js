@@ -18,6 +18,7 @@ function Writing() {
                     <div id="medium-widget"></div>
    
                 </div>
+                <div class='h-12'></div>
 
             </div>
 
