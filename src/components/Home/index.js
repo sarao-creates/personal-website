@@ -17,14 +17,16 @@ function Home() {
                     <div class='w-3/5 h-full sm:w-full sm:block' >
                         <h1 class='font-mono font-extrabold text-6xl px-10 py-5 sm:block sm:w-full sm:px-7 sm:text-center sm:py-3 sm:text-5xl lg:text-5xl'>Sameer Rao</h1>
                         <div class='px-10 py-5 sm:block sm:px-7 sm:py-3'>
-                            <p class='font-mono font-medium text-home-about-xl sm:text-base sm:text-center lg:text-home-about'>I'm a junior at <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a> studying Computer Science and Business Administration.
-                                I'm interested in product, consulting, startups, and the creator economy. 
+                            <p class='font-mono font-medium text-home-about-xl sm:text-base sm:text-center lg:text-home-about'>I'm a senior at <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a> studying Computer Science and Business Administration.
+                                I'm interested in business strategy, new technologies, and startups making change. 
                                 <br /><br />
-                                I formerly helped grow YC creator economy startup <a target='_blank' rel='noopener noreferrer' href='https://jemi.app'><u>Jemi</u></a>, I build web applications for socially-minded organizations like Carolina for the Kids with <a target='_blank' rel='noopener noreferrer' href='https://cs4good.com/'><u>CS+Social Good</u></a>, and I'm a project leader with <a target='_blank' rel='noopener noreferrer' href='https://unc180.wordpress.com/'><u>180 Degrees Consulting</u></a>, working with clients Inheritance of Hope and Ronald McDonald House.
+                                In Fall 2023, I will start my career at Boston Consulting Group in their Dallas, Texas office. I'm excited for all the new things I will learn and incredible people I will meet.
                                 <br /> <br />
-                                Aside from school and career, I'm a huge <a target='_blank' rel='noopener noreferrer' href='https://open.spotify.com/playlist/7epZVe62LRTtODsMFBVY4R?si=38f4397e8fcc4bc4'><u>hip hop head</u></a>, I love playing and watching basketball, I shoot photogaphy at <a href='https://instagram.com/ShotsBySameer'><u>@ShotsBySameer</u></a>, and I may bring up Chicago a bunch around you, that's my home city.
+                                Right now, I am building an escape room with <a target='_blank' rel='noopener noreferrer' href='https://www.chapelthrillescapes.com/'><u>Chapel Thrill Escapes</u></a>. This project has been in the works for years, and I'm happy to announce we'll be launching in early 2023 at UNC Chapel Hill. 
                                 <br /> <br />
-                                I post about tech, products, consulting, and more on my <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/SameerRaoVC'><u>Twitter</u></a> and delve deeper in my <a target='_blank' rel='noopener noreferrer' href='https://medium.com/@sameer_rao'><u>Medium</u></a> articles. Check them out and feel free to connect with me!
+                                Aside from school and career, I'm a huge <a target='_blank' rel='noopener noreferrer' href='https://open.spotify.com/playlist/7epZVe62LRTtODsMFBVY4R?si=38f4397e8fcc4bc4'><u>hip hop head</u></a>, I love playing and watching basketball, I shoot photogaphy at <a href='https://instagram.com/ShotsBySameer'><u>@ShotsBySameer</u></a>, and I enjoy experiences from concerts to new food spots.
+                                <br /> <br />
+                                Feel free to connect with me below :)
                             </p>
                         </div>
 
