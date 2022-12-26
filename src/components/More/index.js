@@ -19,7 +19,13 @@ function More() {
                 </div>
 
                 <p class='font-mono text-base pt-8 sm:text-center'>Startups.</p>
-                <p class='font-mono text-base pt-8 sm:text-center'>Music.</p>
+                <p class='font-mono text-base pt-8 sm:text-center'>Music. Note: Spotify Widget Embeds only show the canonical order as of now. Visit my playlist to see the custom sorting order, which features recently added songs at the top.</p>
+                <div class='pt-4'>
+                    <iframe src="https://open.spotify.com/embed/playlist/7epZVe62LRTtODsMFBVY4R?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                {/* <div class='pt-4'>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSbAW-4I1dotKFS1eHeEbwmAIJDCLaf2PArTueWvGX52v9zr8F-T8YsVq83WMLd9jAcTko8yDhaFBQl/pubhtml?gid=1973148427&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                </div> */}
 
             </div>
             <div class='h-12'></div>
