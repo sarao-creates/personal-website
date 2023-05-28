@@ -1,4 +1,3 @@
-import {useEffect} from 'react';
 import NavBar from '../NavBar';
 
 function Writing() {

@@ -17,14 +17,14 @@ function Home() {
                     <div class='w-3/5 h-full sm:w-full sm:block' >
                         <h1 class='font-mono font-extrabold text-6xl px-10 py-5 sm:block sm:w-full sm:px-7 sm:text-center sm:py-3 sm:text-5xl lg:text-5xl'>Sameer Rao</h1>
                         <div class='px-10 py-5 sm:block sm:px-7 sm:py-3'>
-                            <p class='font-mono font-medium text-home-about-xl sm:text-base sm:text-center lg:text-home-about'>I'm a senior at <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a> studying Computer Science and Business Administration.
+                            <p class='font-mono font-medium text-home-about-xl sm:text-base sm:text-center lg:text-home-about'>I'm a recent graduate from <a target='_blank' rel='noopener noreferrer' href='https://unc.edu'><u>UNC Chapel Hill</u></a>, where I received a B.S. in Computer Science and a B.S. in Business Administration.
                                 I'm interested in business strategy, new technologies, and startups making change. 
                                 <br /><br />
                                 In Fall 2023, I will start my career at Boston Consulting Group in their Dallas, Texas office. I'm excited for all the new things I will learn and incredible people I will meet.
                                 <br /> <br />
-                                Right now, I am building an escape room with <a target='_blank' rel='noopener noreferrer' href='https://www.chapelthrillescapes.com/'><u>Chapel Thrill Escapes</u></a>. This project has been in the works for years, and I'm happy to announce we'll be launching in early 2023 at UNC Chapel Hill. 
+                                At the beginning of 2023, I launched an escape room with <a target='_blank' rel='noopener noreferrer' href='https://www.chapelthrillescapes.com/'><u>Chapel Thrill Escapes</u></a>, which reached over 550 people across 101 rooms played. This project was in the works for years so please feel free to ask me all about it! 
                                 <br /> <br />
-                                Aside from school and career, I'm a huge <a target='_blank' rel='noopener noreferrer' href='https://open.spotify.com/playlist/7epZVe62LRTtODsMFBVY4R?si=38f4397e8fcc4bc4'><u>hip hop head</u></a>, I love playing and watching basketball, I shoot photogaphy at <a href='https://instagram.com/ShotsBySameer'><u>@ShotsBySameer</u></a>, and I enjoy experiences from concerts to new food spots.
+                                Aside from school and career, I'm a huge <a target='_blank' rel='noopener noreferrer' href='https://open.spotify.com/playlist/7epZVe62LRTtODsMFBVY4R?si=38f4397e8fcc4bc4'><u>hip hop head</u></a>, I love playing and watching sports, I shoot photogaphy at <a href='https://instagram.com/ShotsBySameer'><u>@ShotsBySameer</u></a>, and I enjoy unique experiences.
                                 <br /> <br />
                                 Feel free to connect with me below :)
                             </p>
@@ -56,7 +56,7 @@ function Home() {
                             <ExpCard bg='bg-180' company='180 Degrees Consulting' position='VP of Marketing' dates='Jan 2020-Aug 2022' color='text-green-600' description={`180 Degrees Consulting is the world's largest consultancy for non-profits & social enterprises. We provide high-quality consulting services to social impact organizations.`}/> 
                         </div>
                         <div class='w-1/3 sm:w-full lg:w-full'>
-                            <ExpCard bg='bg-cte' company='Chapel Thrill Escapes' position='Chief Executive Officer' dates='Jan 2020-Present' color='text-gray-500' description='The first student-run, student-built escape room built at UNC Chapel Hill. Launching January 2023.'/>
+                            <ExpCard bg='bg-cte' company='Chapel Thrill Escapes' position='Chief Executive Officer' dates='Jan 2020-Apr 2023' color='text-gray-500' description='The first student-run, student-built escape room built at UNC Chapel Hill. Launching January 2023.'/>
                             <ExpCard bg='bg-fidelity' company='Fidelity Investments' position='Software Engineering Intern' dates='Jun 2021-Aug 2021' color='text-green-500' description='Worked as full stack engineer on an Infrastructure project at Fidelity Investments. Learned about automation and back-end management of applications.'/>                           
                             {/* <ExpCard bg='bg-vrware' company='VRware' position='Virtual Reality Software Engineer' dates='Mar 2020-Dec 2020' color='text-yellow-500' description='VRware is a virtual reality startup based out of Chapel Hill, North Carolina, using virtual reality to help prepare entrepreneurs for venture capital pitches.'/> */}
                         </div>

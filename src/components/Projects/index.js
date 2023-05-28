@@ -2,7 +2,7 @@ import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ProjItem from '../ProjItem';
 import './index.css';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 function Projects() {
     const [boolSelect, setBoolSelect] = useState(false);
@@ -12,57 +12,86 @@ function Projects() {
             bg: 'bg-unc-roommates',
             title: 'UNC Roommates',
             techstack: ['React', 'JavaScript', 'Firebase', 'Axios', 'Material-UI', 'Google Maps API', 'Stripe API', 'HTML/CSS'],
-            description: `I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project. what s up what s up what s up what s up what s up what s up what s up what s up what s up what s up`,
+            description: `I created UNC Roommates because two friends and I spent months trying to find a 4th roommate for our apartment in Chapel Hill. There just wasn't an obvious destination to go for meeting new people online (COVID-19) and especially those who were also looking for housing. The current system is to use Facebook Groups which are often unapparent and inactive. So I sought to create an easy-to-use, obvious destination for finding roommates. This is also my COMP 426 Final Project.`,
             github: true,
             gitlink: 'https://github.com/sarao-creates/UNCRoommates',
             more: true,
+            morelink: 'https://6096427c300c42f06256a91e--serene-liskov-010cf3.netlify.app/',
             type: 'Tech'
         },
         {
             bg: 'bg-cftk',
             title: 'Carolina for the Kids – Canvassing Portal',
             techstack: ['React', 'Firebase', 'Google Maps API', 'Material-UI', 'JavaScript', 'HTML/CSS'],
-            description: `This was my first expeience using React and Firebase. I collaborated with six other UNC students to create a web app for Carolina for the Kids. Over the 7-month project, we went from initial Figma designs to a finished product. Click to learn more about the need for this project!`,
+            description: `This was my first expeience using React and Firebase. I collaborated with six other UNC students to create a web app for Carolina for the Kids. Traditionally, this organization tracked their door-to-door fundraising for UNC Children's Hospital through paper means. This 7-month project created a digital canvassing portal in which volunteers could log the money raised and at what specific houses they raised money via their phones. We went from initial Figma designs to a finished product. Click to learn more about the need for this project!`,
             github: true,
-            gitlink: 'https://github.com/sarao-creates/UNCRoommates',
+            gitlink: 'https://github.com/sarao-creates/cftk',
+            more: false,
+            morelink: '', 
+            type: 'Tech',
+        },
+        {
+            bg: 'bg-488-graduate-hotels',
+            title: 'Solving Retention for Graduate Hotels',
+            techstack: ['Python', 'Jupyter Notebooks', 'Pandas'],
+            description: 'Graduate Hotels, a local hotel in Chapel Hill, came to us with a problem: how do we retain our customers? Using sentiment analysis of over 84,000 Trip Advisor reviews, we classified customer segments into positive, neutral, or negative expereinced guests. We then benchmarked with competitors and identified the key areas Graduate Hotels were missing the mark on.',
             more: true,
-            type: 'Tech',
+            morelink: "https://drive.google.com/file/d/1xyr_EMQdOvk1qs0VONi_zE0rd-ySqQUV/view?usp=sharing",
+            type: 'Tech'
         },
         {
-            bg: 'bg-website',
-            title: 'Personal Website',
-            techstack: ['React', 'TailwindCSS', 'JavaScript', 'AWS (S3)', 'HTML/CSS'],
-            description: `I've always wanted a personal website for myself–a place that I can look back on years later and reminisce on projects. It's also a great way to improve personal branding and coding skills! (...and I can plug in social media bios)`,
-            github: true,
-            gitlink: 'https://github.com/sarao-creates/personal-website',
-            more: false,
-            type: 'Tech',
-        },
-        {
-            bg: 'bg-dij',
-            title: `Dijkstra's Algorithm Scalable Simuation`,
-            techstack: ['Java', 'HashMap', 'Priority Queue', 'Graphs', 'Object-Oriented Programming'],
-            description: `Plain Java ...`,
-            github: true,
-            gitlink: 'https://github.com/sarao-creates/DataStructures/tree/main/assignment5_f20',
-            more: false,
-            type: 'Tech',
+            bg: 'bg-488-coffee-shop',
+            title: `Increasing a Coffee Shop's Profit Margins via Machine Learning`,
+            techstack: ['Python', 'Jupyter Notebooks', 'Pandas'],
+            description: 'A coffee shop provided us with their sales data. Using this data, we used ML to identify complementary products and recommended dropping non-complementary products with low revenue. We then developed a Happy Hour bundle for off-peak sales hours.',
+            more: true,
+            morelink: "https://drive.google.com/file/d/1fU4rg21IFdJ8C7G0nxeEqi4pfy4Hi9aB/view?usp=sharing",
+            type: 'Tech'
         },
         {
             bg: 'bg-vr',
             title: `Virtual Reality Application for Pitch Practice`,
             techstack: ['Unreal Engine', 'C++', 'Oculus Quest'],
-            description: `Created VR scenes with another student for VRware.`,
+            description: `Collaborated with another student at UNC to build a VR software that would help people practice pitching under realistic environments. I built out the VR scenes, body tracking feature, and VR mechanics while Jiayi worked on audio analysis, VR UI, and character animations. Also raised $400 in funding and build the business model for this project.`,
             github: true,
             gitlink: 'https://github.com/sarao-creates/VRware-Presentation-Practice',
             more: true,
             type: 'Tech',
         },
         {
+            bg: 'bg-dij',
+            title: `Dijkstra's Algorithm Scalable Simuation`,
+            techstack: ['Java', 'HashMap', 'Priority Queue', 'Graphs', 'Object-Oriented Programming'],
+            description: `Implemented Dijkstra's Algorithm using Java in my COMP 410 class. This was early in my computer science journey but a fun project nonetheless.`,
+            github: true,
+            gitlink: 'https://github.com/sarao-creates/DataStructures/tree/main/assignment5_f20',
+            more: false,
+            type: 'Tech',
+        },
+        {
+            bg: 'bg-rest-backend',
+            title: 'RESTful Interface for Developing Exam Questions',
+            techstack: ['Python', 'SQL', 'Postman'],
+            description: `This project is the backend for a web application for developing exam questions for a database class. Create multiple choice, short answer, or SQL questions using custom routes, stored in a SQL database backend. Learn more about the routes and how to use them at the Github repo below.`,
+            github: true,
+            gitlink: 'https://github.com/sarao-creates/exam-question-backend',
+            more: false,
+            type: 'Tech',
+        },
+        {
+            bg: 'bg-mpower',
+            title: 'mPOWER Web Development Project',
+            techstack: ['React', 'NextJS', 'Firebase', 'HTML/CSS'],
+            description: `Worked with a client called mPOWER, a startup. They were looking to develop the 'Yelp of Community Resources'. We took their Figma designs and made them a reality. This was part of my time at CS+SG. I did much less coding on this project as I was the Project Manager. This means I helped coordinate meetings and helped other people code.`,
+            github: true,
+            gitlink: 'https://github.com/cssgunc/mPOWER',
+            type: 'Tech'
+        }, 
+        {
             bg: 'bg-2048',
             title: '2048 Online Game',
             techstack: ['JavaScript', 'React', 'HTML/CSS'],
-            description: `2048 is a game...`,
+            description: `2048 is a game...and I built this project for my COMP 426 class.`,
             github: true,
             gitlink: 'https://github.com/sarao-creates/2048-game',
             more: false,
@@ -79,14 +108,61 @@ function Projects() {
             type: 'Tech',
         },
         {
-            bg: 'bg-rest-backend',
-            title: 'RESTful Interface for Developing Exam Questions',
-            techstack: ['Python', 'SQL', 'Postman'],
-            description: `This project is the backend for a web application for developing exam questions for a database class. Create multiple choice, short answer, or SQL questions using custom routes, stored in a SQL database backend. Learn more about the routes and how to use them at the Github repo below.`,
+            bg: 'bg-website',
+            title: 'Personal Website',
+            techstack: ['React', 'TailwindCSS', 'JavaScript', 'AWS (S3)', 'HTML/CSS'],
+            description: `I've always wanted a personal website for myself–a place that I can look back on years later and reminisce on projects. It's also a great way to improve personal branding and coding skills! (...and I can plug in social media bios). You're looking at this project right now!`,
             github: true,
-            gitlink: 'https://github.com/sarao-creates/exam-question-backend',
+            gitlink: 'https://github.com/sarao-creates/personal-website',
             more: false,
             type: 'Tech',
+        },
+        {
+            bg: 'bg-cte-r',
+            title: 'Chapel Thrill Escapes: Rameses in Wonderland Escape Room',
+            techstack: ['Entrepreneurship', 'Management', 'Operations', 'Product', 'Marketing', 'Finance', 'Sales'],
+            description: `This project was my baby during my time at Chapel Hill. The tangible project I wanted to give back to my school. We built the 'Rameses in Wonderland' Escape Room in 10 months and ran the room for 550+ people across 101 rooms in its first three months.`,
+            github: false,
+            gitlink: '',
+            more: true,
+            morelink: 'https://www.chapelthrillescapes.com/',
+            type: 'Business'
+        },
+        {
+            bg: 'bg-apple',
+            title: 'Apple Case Competition for CSF',
+            techstack: ['Consulting', 'Research', 'Finance'],
+            description: `Developed recommendations for Apple regarding revenue-generating ideas, including acquiring a young AI health startup and becoming a network MVNO. Placed 1st in case compeititon.`,
+            more: true,
+            morelink: 'https://drive.google.com/file/d/1nrgvXNpT1KFpoy5CR_0leJPuU-EgIr3m/view?usp=sharing',
+            type: 'Business'
+        },
+        {
+            bg: 'bg-180-rmh',
+            title: 'Ronald McDonald House: Merger Project',
+            techstack: ['Consulting', 'Research'],
+            description: 'With 180DC UNC, we were hired by the Ronald McDonald House of Chapel Hill & Durham. The two locations were set to complete a merger in 2023 of their nonprofit houses. They asked us to provide them recommendations on best nonprofit merger practices to maintain operational and cultural success post-merger. Our team worked with the Executive Directors of both houses in developing this project.',
+            more: true,
+            morelink: "https://drive.google.com/file/d/1LZqg3uhHeVBKMlLArdknNDx8AJcwgytt/view?usp=sharing",
+            type: 'Business'
+        },
+        {
+            bg: 'bg-180-ioh',
+            title: 'Inheritance of Hope: New Product Project',
+            techstack: ['Consulting', 'Research'],
+            description: 'With 180DC UNC, we were hired by the Inheritance of Hope to conduct research on a new product they seeked to offer via their mobile app - legacy videos. In this project, I was the Project Leader and led a team of four other consultants in developing recommendations on the best strategy in launching this new product.',
+            more: true,
+            morelink: "https://drive.google.com/file/d/1fN7Dyy7i-GnZzNM2RAd1uRvanb317rmS/view?usp=sharing",
+            type: 'Business'
+        },
+        {
+            bg: 'bg-best-buy',
+            title: 'Best Buy Case Competition for CSF',
+            techstack: ['Consulting', 'Research', 'Finance'],
+            description: `Developed recommendations for Best Buy regarding revenue-generating ideas, including expanding into smart fitness clothing and bundling solar panels with installation services via GeekSquad. Placed 1st in case compeititon.`,
+            more: true,
+            morelink: 'https://drive.google.com/file/d/1WDtHg-_Oe8fM8nToV1N1xKVqct1A7AeV/view?usp=sharing',
+            type: 'Business'
         },
         {
             bg: 'bg-donuts',
@@ -96,8 +172,9 @@ function Projects() {
             github: false,
             gitlink: '',
             more: true,
+            morelink: 'https://www.instagram.com/donuthavecookies/',
             type: 'Business',
-        }
+        },
         
     ]
     
@@ -210,6 +287,10 @@ function Projects() {
                              }
 
                         </div>
+                        <div>
+                            <br></br>
+                            <Footer />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,6 +300,7 @@ function Projects() {
             <div class='h-12'>
 
             </div>
+            
             
 
         </div>

@@ -10,8 +10,8 @@ function ProjItem(props) {
         if (props.info.github === true && props.info.more === true) {
             return (
                 <div class='pt-3'>
-                    <a href={props.gitlink} target='_blank' rel='noopener noreferrer'><button class='focus:outline-none'><FontAwesomeIcon icon={faGithub} size='2x'></FontAwesomeIcon></button></a>
-                    <button class='ml-3 focus:outline-none'><FontAwesomeIcon icon={faInfoCircle} size='2x'></FontAwesomeIcon></button>
+                    <a href={props.info.gitlink} target='_blank' rel='noopener noreferrer'><button class='focus:outline-none'><FontAwesomeIcon icon={faGithub} size='2x'></FontAwesomeIcon></button></a>
+                    <a href={props.info.morelink} target='_blank' rel='noopener noreferrer'><button class='ml-3 focus:outline-none'><FontAwesomeIcon icon={faInfoCircle} size='2x'></FontAwesomeIcon></button></a>
                 </div>
             )
         }
@@ -24,9 +24,11 @@ function ProjItem(props) {
         }
 
         else if (props.info.more === true) {
+            return( 
             <div class='pt-3'>
-                <button><FontAwesomeIcon icon={faInfoCircle} size='2x'></FontAwesomeIcon></button>
+                <a href={props.info.morelink} target='_blank' rel='noopener noreferrer'><button><FontAwesomeIcon icon={faInfoCircle} size='2x'></FontAwesomeIcon></button></a>
             </div>
+            )
 
         }
     }

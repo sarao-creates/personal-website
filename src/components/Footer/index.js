@@ -19,7 +19,7 @@ function Footer() {
                                 <div class='ml-5 inline'><a target='_blank' rel='noopener noreferrer' href='https://open.spotify.com/user/sam.i.am01?si=eb3db51c15d34fe3'><FontAwesomeIcon icon={faSpotify} size='3x'/></a></div>
                             </div>
                             <div class='px-10 w-full sm:px-3'>
-                                <span class='pt-3 inline-block sm:block sm:text-center sm:pb-5'>Made by Sameer</span>
+                                <span class='pt-3 inline-block sm:block sm:text-center sm:pb-5'>Made by Sameer via React & other software tools</span>
                             </div>
                         </div>
                     </div>

@@ -43,6 +43,14 @@ module.exports = {
         'municipal':"url('/src/assets/photography/municipal.jpg')",
         'parthenon':"url('/src/assets/photography/parthenon.jpg')",
         'sacre':"url('/src/assets/photography/sacre-couer.jpg')",
+        'cte-r':"url('/src/assets/projects/cte-r.png')",
+        'apple':"url('/src/assets/projects/apple.png')",
+        'best-buy':"url('/src/assets/projects/best-buy.png')",
+        '180-rmh':"url('/src/assets/projects/180-rmh.png')",
+        '180-ioh':"url('/src/assets/projects/180-ioh.png')",
+        '488-coffee-shop':"url('/src/assets/projects/488-coffee-shop.png')",
+        '488-graduate-hotels':"url('/src/assets/projects/488-graduate-hotels.png')",
+        'mpower':"url('/src/assets/projects/mpower.png')"
        }),
 
        height: {
