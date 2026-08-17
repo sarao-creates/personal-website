@@ -12,8 +12,8 @@ function NavBar() {
                 {/* <Link to='/about' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium sm:px-1 sm:py-1">About</span></Link> */}
                 {/* <Link to='/experience' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md sm:text-base font-medium sm:px-1 sm:py-1">Experience</span></Link> */}
                 <Link to='/projects' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md sm:text-base font-medium sm:px-1 sm:py-1">Projects</span></Link>
-                <Link to='/writing' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md sm:text-base font-medium sm:px-1 sm:py-1">Writing</span></Link>
-                <Link to='/more' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md sm:text-base font-medium sm:px-1 sm:py-1">More</span></Link>
+                {/* <Link to='/writing' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md sm:text-base font-medium sm:px-1 sm:py-1">Writing</span></Link> */}
+                <Link to='/more' style={{textDecoration: 'none', marginTop: '5px', padding: '0'}}><span class="text-lg hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md sm:text-base font-medium sm:px-1 sm:py-1">Photography</span></Link>
             </div>
         </div>
         

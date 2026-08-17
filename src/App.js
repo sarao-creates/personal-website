@@ -23,9 +23,9 @@ function App() {
         <Route path='/projects'>
           <ProjectComponent />
         </Route>
-        <Route path='/writing'>
+        {/* <Route path='/writing'>
           <WritingComponent />
-        </Route>
+        </Route> */}
         <Route path='/more'>
           <MoreComponent />
         </Route>
